@@ -148,7 +148,54 @@
         }
         .child_box_content_list:hover {
             transform: scale(1.02);
-        }    
+        }  
+        
+        .box-card {
+            margin: 45px auto;
+            width: 90%;
+            border: 4px solid transparent;
+            display: flex;
+            overflow: hidden;
+            gap: 0;
+            margin-top: 45px;
+        }
+
+        .box-card::-webkit-scrollbar {
+            display: none;
+        }
+        .group-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            animation: spin 10s infinite linear;
+            padding-right: 1em;
+        }
+        .card {
+            flex: 0 0 20em; 
+            height: 25em; 
+            background: #222831;
+            font-size: 1.2rem; 
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+        }
+        .box-card:hover .group-card {
+            animation-play-state: paused;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%); 
+            }
+        }  
 
 
     </style>
