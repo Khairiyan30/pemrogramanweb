@@ -13,6 +13,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.h2 {
+    font-size: 58px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -94,7 +98,7 @@ nav ul li a:hover {
 }
 
 .fashion-list-header-women {
-    padding-top: 10rem;
+    padding-top: 7.5rem;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -182,4 +186,12 @@ nav ul li a:hover {
 
 .btn-book:hover {
     background: #393E46;
+}
+
+.services {
+    background: #777C6D;
+    justify-content: center;
+    padding: 100px 10%; 
+    text-align: center; 
+    
 }
