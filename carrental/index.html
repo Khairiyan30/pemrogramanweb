@@ -4,69 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental</title>
+    <title>Premium Car Rental</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-    <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>    
+        <div class="logo">Riyan<span>Car</span></div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="search">Cars</a>
+            <a href="services">Services</a>
+            <a href="#">Contact</a>
+        </nav>    
     </header>
 
-    <div id="search">
+    <section id="search">
         <div class="title">
-            <h1>Car Rental</h1>
-            <p>Find the perfect car for your next adventure</p>
+            <h1>Find Your Next Adventure</h1>
+            <p>Luxury and sports cars for your special occasions</p>
             <hr>
         </div>
         <div class="form-container">
             <div class="form-group">
-                <label for="pickup">Rental Location:</label>
+                <label for="pickup">Rental Location</label>
                 <select id="pickup" name="pickup">
                     <option value="">Select Location</option>
                     <option value="location1">Yogyakarta</option>
                     <option value="location2">Bali</option>
+                    <option value="location3">Jakarta</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="pickup-date">Rental Start Date:</label>
+                <label for="pickup-date">Start Date</label>
                 <input type="date" id="pickup-date" name="pickup-date">
             </div>
             <div class="form-group">
-                <label for="return-date">Rental End Date:</label>
+                <label for="return-date">End Date</label>
                 <input type="date" id="return-date" name="return-date">
             </div>
-            <button type="submit">Search</button>
+            <button type="submit" class="btn-search">Search Now</button>
         </div>
-    </div>
+    </section>
 
-    <div class="car-list">
-        <h2>Car List</h2>
-        <div class="car-item">
-            <img src="assetmobil/Nissan GTR R34 Skyline.jpg" alt="Nissan GTR R34 Skyline">
-            <h3>Nissan GTR R34 Skyline</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Nissan/17028/Nissan-R33-Skyline-GT-R.html" target="_blank">Details Specifications</a>
+    <main class="container">
+        <div class="car-list-header">
+            <h2>Our Premium Fleet</h2>
+            <p>Choose from our selection of high-performance vehicles</p>
         </div>
-        <div class="car-item">
-            <img src="assetmobil/Madza RX7.jpg" alt="Madza RX7">
-            <h3>Madza RX7</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Mazda/17029/Mazda-RX-7.html" target="_blank">Details Specifications</a>
+        
+        <div class="car-grid">
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="assetmobil/Nissan GTR R34 Skyline.jpg" alt="Nissan GTR R34 Skyline">
+                </div>
+                <div class="car-info">
+                    <h3>Nissan GTR R34 Skyline</h3>
+                    <p class="price">Rp 2.500.000 <span>/ day</span></p>
+                    <div class="car-actions">
+                        <a href="https://www.ultimatespecs.com/car-specs/Nissan/17028/Nissan-R33-Skyline-GT-R.html" target="_blank" class="btn-detail">Specs</a>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="assetmobil/Madza RX7.jpg" alt="Madza RX7">
+                </div>
+                <div class="car-info">
+                    <h3>Mazda RX7 Spirit R</h3>
+                    <p class="price">Rp 2.200.000 <span>/ day</span></p>
+                    <div class="car-actions">
+                        <a href="https://www.ultimatespecs.com/car-specs/Mazda/17029/Mazda-RX-7.html" target="_blank" class="btn-detail">Specs</a>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="assetmobil/Toyota Supra MK5.jpg" alt="Toyota Supra MK5">
+                </div>
+                <div class="car-info">
+                    <h3>Toyota Supra MK5</h3>
+                    <p class="price">Rp 3.000.000 <span>/ day</span></p>
+                    <div class="car-actions">
+                        <a href="https://www.ultimatespecs.com/car-specs/Toyota/17030/Toyota-Supra-MK5.html" target="_blank" class="btn-detail">Specs</a>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="assetmobil/Porsche 911 Turbo S.jpg" alt="Porsche 911 Turbo S">
+                </div>
+                <div class="car-info">
+                    <h3>Porsche 911 Turbo S</h3>
+                    <p class="price">Rp 5.500.000 <span>/ day</span></p>
+                    <div class="car-actions">
+                        <a href="https://www.ultimatespecs.com/car-specs/Porsche/17031/Porsche-911-Turbo-S.html" target="_blank" class="btn-detail">Specs</a>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="assetmobil/Toyota Supra MK5.jpg" alt="Toyota Supra MK5">
-            <h3>Toyota Supra MK5</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Toyota/17030/Toyota-Supra-MK5.html" target="_blank">Details Specifications</a>
-        </div>
-        <div class="car-item">
-            <img src="assetmobil/Porsche 911 Turbo S.jpg" alt="Porsche 911 Turbo S">
-            <h3>Porsche 911 Turbo S</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Porsche/17031/Porsche-911-Turbo-S.html" target="_blank">Details Specifications</a>
-        </div>
-    </div>
+    </main>
+    <section id="services" style="padding: 100px 10%; text-align: center; background: #eee;">
+        <h2>Our Services and Contact Us</h2>
+        <p>Kami menyediakan sewa harian, lepas kunci, dan sewa dengan supir profesional.</p>
+        <p>WhatsApp: +62 812-3456-7890 | Email: info@elitedrive.com</p>
+    </section>
+
 </body>
-
 </html>
