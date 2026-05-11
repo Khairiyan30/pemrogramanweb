@@ -270,6 +270,30 @@ button[type="submit"] {
     object-fit: cover; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
+
+.about-video-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 footer {
     background-color: #F1D1D0;
     color: #131010;
@@ -278,4 +302,16 @@ footer {
     margin-top: auto;
 }
 
+@media (max-width: 1024px) {
+    .about-video-container {
+        height: 400px;
+    }
+}
+
+/* Penyesuaian untuk HP */
+@media (max-width: 768px) {
+    .about-video-container {
+        height: 250px;
+    }
+}
 
