@@ -75,38 +75,6 @@ main {
     padding: 0 20px;
 }
 
-.hero-about {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/background-teaser.mp4') center/cover;
-    width: 100%;          /* Mengubah 1920px menjadi 100% */
-    min-height: 100vh;    /* Mengubah 1080px menjadi min-height 100vh */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #F4F9F9;
-    padding: 0 20px;
-}
-
-.video-hero {
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bg-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 .hero h1 {
     font-size: 3rem;
