@@ -64,8 +64,8 @@ main {
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/background_pink4.jpg') center/cover;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;          /* Mengubah 1920px menjadi 100% */
+    min-height: 100vh;    /* Mengubah 1080px menjadi min-height 100vh */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,8 +77,8 @@ main {
 
 .hero-about {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/background-teaser.mp4') center/cover;
-    width: 100%;
-    aspect-ratio: 16 / 9; 
+    width: 100%;          /* Mengubah 1920px menjadi 100% */
+    min-height: 100vh;    /* Mengubah 1080px menjadi min-height 100vh */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,13 +291,3 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-}
