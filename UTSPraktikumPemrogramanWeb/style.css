@@ -77,6 +77,19 @@ main {
     padding: 0 20px;
 }
 
+.hero-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/background-teaser.mp4') center/cover;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F4F9F9;
+    padding: 0 20px;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 15px;
